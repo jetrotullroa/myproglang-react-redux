@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 // COMPONENTS
-import LanguageList from './language_list'
+import LanguageList from '../containers/language-list'
 import ActiveLanguage from './active_language'
 
 export default class App extends Component {
