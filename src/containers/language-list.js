@@ -1,5 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { selectLang } from '../actions/index'
+import { bindActionCreators} from 'redux'
+
 
 class LanguageList extends React.Component {
 
@@ -7,6 +10,7 @@ class LanguageList extends React.Component {
     return this.props.myproglangs.map((myproglang) => {
       return (
         <li
+          onClick={() => this.props.selectLang(myproglang)}
           key={myproglang.name}
           className="list-group-item">
           {myproglang.name}
@@ -32,5 +36,9 @@ const mapStateToProps = (state) => {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ selectLang: selectLang }, dispatch)
+}
 
-export default connect(mapStateToProps)(LanguageList)
+
+export default connect(mapStateToProps, mapDispatchToProps)(LanguageList)
