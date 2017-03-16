@@ -6,7 +6,9 @@ class LanguageList extends React.Component {
   renderList() {
     return this.props.myproglangs.map((myproglang) => {
       return (
-        <li className="list-group-item">
+        <li
+          key={myproglang.name}
+          className="list-group-item">
           {myproglang.name}
         </li>
       )
