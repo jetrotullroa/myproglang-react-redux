@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import MyProgLangsReducer from './reducer_myproglangs'
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  myproglangs: MyProgLangsReducer
 });
 
 export default rootReducer;
