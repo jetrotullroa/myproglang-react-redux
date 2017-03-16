@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 // COMPONENTS
 import LanguageList from '../containers/language-list'
-import ActiveLanguage from './containers/active-language'
+import ActiveLanguage from '../containers/active-language'
 
 export default class App extends Component {
   render() {
