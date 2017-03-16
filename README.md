@@ -5,7 +5,7 @@
 
 ### Instructions
 
-  > git clone git@github.com:jetrotullroa/myproglang.git myproglang
+  > git clone git@github.com:jetrotullroa/myproglang-react-redux.git myproglang
 
   > cd myproglang
 
